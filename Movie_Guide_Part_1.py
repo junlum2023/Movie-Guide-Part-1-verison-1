@@ -32,11 +32,11 @@ def main():
     
     while True:
         command = input("Command: ")
-        if command.lower() == "lists":
-            list(movie_list) 
+        if command.lower() == "list":
+            lists(movie_list) 
         elif command.lower() == "add":
             add(movie_list)
-        elif command.lower() == "del":
+        elif command.lower() == "delete":
             delete(movie_list)
         elif command.lower() == "exit":
             break
@@ -44,7 +44,7 @@ def main():
             print("Not a valid command, please try again. \n")
             print("Later!")
         
-    if __name__ == "__main__":
+if __name__ == "__main__":
         main() 
             
        
